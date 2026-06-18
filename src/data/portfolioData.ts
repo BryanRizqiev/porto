@@ -5,8 +5,8 @@ export const portfolioData = {
   location: "Kediri, Indonesia",
   email: "bryanprakosa@gmail.com",
   phone: "+62 896-1824-9012",
-  linkedin: "https://linkedin.com/in/budisantoso",
-  github: "https://github.com/budisantoso",
+  linkedin: "https://linkedin.com/in/bryan-rizqi-prakosa",
+  github: "https://github.com/bryanrizqiev",
   avatar: "BS",
   avatarColor: "from-violet-600 to-indigo-600",
   // Ganti dengan path foto Anda, contoh: '/foto-profil.jpg' atau import langsung
