@@ -4,7 +4,7 @@ export const portfolioData = {
   title: "Full Stack Developer",
   location: "Kediri, Indonesia",
   email: "bryanprakosa@gmail.com",
-  phone: "+62 896-1824-9012",
+  phone: "0896-1824-9012",
   linkedin: "https://linkedin.com/in/bryan-rizqi-prakosa",
   github: "https://github.com/bryanrizqiev",
   avatar: "BS",
@@ -12,19 +12,23 @@ export const portfolioData = {
   // Ganti dengan path foto Anda, contoh: '/foto-profil.jpg' atau import langsung
   // Letakkan file foto di folder public/ agar bisa diakses via path '/namafile.jpg'
   photo: "/profile.jpeg", // kosongkan jika ingin pakai avatar inisial
-  bio: "Passionate Full Stack Developer dengan 3+ tahun pengalaman membangun aplikasi web modern. Berfokus pada user experience yang intuitif dan kode yang bersih serta scalable.",
+  bio: "Fullstack Developer dengan pengalaman profesional di bidang pengembangan aplikasi web, mencakup peran sebagai Backend Developer, Odoo Developer, dan Fullstack Developer. Berpengalaman mengembangkan sistem ERP, aplikasi pemerintahan, dan platform berbasis web baik secara remote maupun onsite. Menguasai JavaScript, PHP, Golang, Python, dan SQL, serta memiliki pemahaman yang baik dalam perancangan API, manajemen basis data, dan pengembangan sistem yang efisien.",
   skills: [
-    { name: "React / Next.js", level: "Sangat Mahir" as const },
-    { name: "TypeScript", level: "Mahir" as const },
-    { name: "Node.js / Express", level: "Mahir" as const },
-    { name: "Python / Django", level: "Menengah" as const },
+    { name: "PHP / Laravel", level: "Sangat Mahir" as const },
+    { name: "Node.js", level: "Mahir" as const },
+    { name: "Python", level: "Mahir" as const },
+    { name: "Golang", level: "Mahir" as const },
     { name: "PostgreSQL / MySQL", level: "Mahir" as const },
+    { name: "Odoo", level: "Menengah" as const },
+    { name: "Data Analyst / Data Scientist", level: "Menengah" as const },
+    { name: "React / Vue", level: "Menengah" as const },
     { name: "Docker / DevOps", level: "Menengah" as const },
   ],
   techTags: [
-    "React", "Next.js", "TypeScript", "Node.js", "Python",
-    "PostgreSQL", "Docker", "Git", "REST API", "GraphQL",
-    "Tailwind CSS", "AWS", "Linux", "Redis"
+    "PHP / Laravel", "Node.js", "Python", "Golang",
+    "PostgreSQL", "MySQL", "Redis", "Odoo",
+    "React / Vue", "Tailwind CSS", "Bootstrap",
+    "Linux", "Docker", "Git"
   ],
   experience: [
     {
@@ -65,8 +69,8 @@ export const portfolioData = {
     {
       name: "E-Pelayanan Perumda Pasar Joyoboyo",
       description: "Platform perdagangan business-to-business dengan fitur manajemen katalog, order tracking, dan sistem pembayaran multi-gateway.",
-      tags: ["React", "Node.js", "PostgreSQL"],
-      link: "#",
+      tags: ["PHP", "Laravel", "MySQL"],
+      link: "https://sidapajoyoboyo.kedirikota.go.id",
       stars: 142,
       color: "from-violet-500 to-purple-600",
       icon: "🛒",
@@ -74,8 +78,8 @@ export const portfolioData = {
     {
       name: "Siabjoyo Absensi Pasar Joyoboyo",
       description: "Real-time analytics dashboard dengan visualisasi data interaktif menggunakan Chart.js dan WebSocket untuk update live.",
-      tags: ["Next.js", "Python", "Redis"],
-      link: "#",
+      tags: ["PHP", "Laravel", "MySQL"],
+      link: "https://siabjoyo.kedirikota.go.id",
       stars: 89,
       color: "from-indigo-500 to-blue-600",
       icon: "📊",
@@ -83,8 +87,8 @@ export const portfolioData = {
     {
       name: "FMI (Forum Manajemen Indonesia)",
       description: "Aplikasi manajemen tugas kolaboratif dengan fitur drag-and-drop, notifikasi real-time, dan integrasi kalender.",
-      tags: ["React", "GraphQL", "MongoDB"],
-      link: "#",
+      tags: ["Python", "Odoo", "PostgreSQL"],
+      link: "https://fmi.or.id",
       stars: 203,
       color: "from-purple-500 to-pink-600",
       icon: "✅",
@@ -93,7 +97,7 @@ export const portfolioData = {
       name: "Bot Telegram",
       description: "Framework REST API open-source berbasis Node.js dengan built-in authentication, rate limiting, dan dokumentasi otomatis.",
       tags: ["Node.js", "TypeScript", "Docker"],
-      link: "#",
+      link: "",
       stars: 317,
       color: "from-blue-500 to-cyan-600",
       icon: "⚡",
@@ -101,12 +105,12 @@ export const portfolioData = {
   ],
   education: [
     {
-      school: "Universitas Indonesia",
+      school: "Universitas Nusantara PGRI Kediri",
       major: "Teknik Informatika",
-      period: "2017 – 2021",
-      gpa: "3.75",
-      icon: "UI",
-      color: "bg-amber-100 text-amber-700",
+      period: "2021 – 2025",
+      gpa: "3.88",
+      icon: "UNP",
+      color: "bg-blue-100 text-blue-700",
     },
   ],
   certifications: [
