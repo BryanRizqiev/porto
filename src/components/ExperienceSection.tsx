@@ -62,15 +62,6 @@ export default function ExperienceSection({ data }: Props) {
                   </div>
                 </div>
               </div>
-
-              {/* Timeline connector */}
-              {i < data.experience.length - 1 && (
-                <div className="mt-5 flex justify-start pl-16">
-                  <div className="h-px w-16 bg-gray-200 relative">
-                    <div className="absolute right-0 -top-0.5 w-1 h-1 bg-gray-300 rounded-full" />
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
