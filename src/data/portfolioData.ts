@@ -54,7 +54,7 @@ export const portfolioData = {
     {
       company: "Endavor.id",
       role: "Backend Developer",
-      period: "Jun 2024 – Nov 2024",
+      period: "Jun 2024 – Des 2024",
       type: "Freelance",
       mode: "Remote · Surabaya",
       description: "Mengembangkan berbagai aplikasi pos dan sistem informasi sekolah dan membuat fitur akuntantsi di sistem informasi sekolah",
@@ -109,12 +109,13 @@ export const portfolioData = {
       gpa: "3.88",
       icon: "UNP",
       color: "bg-blue-100 text-blue-700",
+      link: "https://drive.google.com/file/d/1kFWDFJ-z2Q_K2UieOgzdL-qOvI7mgBFw/view",
     },
   ],
   certifications: [
-    { name: "Backend Developer Expert", issuer: "Dicoding", year: "2024" },
-    { name: "Data Science & AI", issuer: "Startup Campus", year: "2024" },
-    { name: "Mastering Golang", issuer: "Alterra Academy", year: "2023" },
-    { name: "Devops", issuer: "Dicoding", year: "2023" },
+    { name: "Backend Developer Expert", issuer: "Dicoding", year: "2024", link: "https://www.dicoding.com/certificates/MRZMEDQ8RPYQ" },
+    { name: "Data Science & AI", issuer: "Startup Campus", year: "2024", link: "https://drive.google.com/file/d/1ieRdiVsaRhUX1AhKIc17Ww3r7y5SlECJ/view" },
+    { name: "Mastering Golang", issuer: "Alterra Academy", year: "2023", link: "https://drive.google.com/file/d/18mVkb2Amk1aSvZtreZf-vxV2Yb9k1CoJ/view" },
+    { name: "Devops", issuer: "Dicoding", year: "2023", link: "https://www.dicoding.com/certificates/MRZMQ6J0KPYQ" },
   ],
 };

@@ -35,11 +35,10 @@ export default function SkillsSection({ data }: Props) {
                         {[1, 2, 3, 4].map((d) => (
                           <div
                             key={d}
-                            className={`w-2.5 h-2.5 rounded-full border-2 transition-colors ${
-                              d <= cfg.dots
-                                ? 'border-violet-500 bg-violet-500'
-                                : 'border-gray-200 bg-transparent'
-                            }`}
+                            className={`w-2.5 h-2.5 rounded-full border-2 transition-colors ${d <= cfg.dots
+                              ? 'border-violet-500 bg-violet-500'
+                              : 'border-gray-200 bg-transparent'
+                              }`}
                           />
                         ))}
                       </div>
@@ -62,8 +61,8 @@ export default function SkillsSection({ data }: Props) {
                 {[
                   { emoji: '🤝', label: 'Team Player', desc: 'Kolaborasi efektif' },
                   { emoji: '💡', label: 'Problem Solving', desc: 'Analitis & kreatif' },
-                  { emoji: '🗣️', label: 'Komunikasi', desc: 'Jelas & efektif' },
                   { emoji: '⚡', label: 'Fast Learner', desc: 'Adaptif terhadap teknologi baru' },
+                  { emoji: '🗣️', label: 'Komunikasi', desc: 'Jelas & efektif' },
                   { emoji: '🎯', label: 'Detail-oriented', desc: 'Kualitas kode tinggi' },
                   { emoji: '📅', label: 'Manajemen Waktu', desc: 'Deadline terpenuhi' },
                 ].map((item) => (
@@ -87,8 +86,8 @@ export default function SkillsSection({ data }: Props) {
               <div className="space-y-3">
                 {[
                   'Kode bersih, terstruktur & terdokumentasi',
-                  'Desain yang responsif & aksesibel',
                   'Performa aplikasi yang optimal',
+                  'Desain yang responsif & aksesibel',
                   'Estimasi waktu yang akurat',
                   'Komunikasi proaktif & transparan',
                 ].map((item) => (

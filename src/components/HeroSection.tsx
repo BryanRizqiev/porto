@@ -106,9 +106,38 @@ export default function HeroSection({ data }: Props) {
                     {edu.icon}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">{edu.school}</p>
+                    {edu.link ? (
+                      <a
+                        href={edu.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-semibold text-gray-900 hover:text-violet-600 hover:underline inline-flex items-center gap-1"
+                      >
+                        {edu.school}
+                        <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                      </a>
+                    ) : (
+                      <p className="text-sm font-semibold text-gray-900">{edu.school}</p>
+                    )}
                     <p className="text-xs text-gray-500">{edu.major}</p>
-                    <p className="text-xs text-gray-400">{edu.period} · IPK {edu.gpa}</p>
+                    <p className="text-xs text-gray-400">
+                      {edu.period} · IPK {edu.gpa}
+                      {edu.link && (
+                        <>
+                          {" · "}
+                          <a
+                            href={edu.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-violet-600 hover:underline"
+                          >
+                            Transkrip
+                          </a>
+                        </>
+                      )}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -126,7 +155,21 @@ export default function HeroSection({ data }: Props) {
                       <span className="w-1.5 h-1.5 bg-violet-500 rounded-full" />
                     </span>
                     <div>
-                      <p className="text-xs font-medium text-gray-800">{cert.name}</p>
+                      {cert.link ? (
+                        <a
+                          href={cert.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-xs font-medium text-gray-800 hover:text-violet-600 hover:underline inline-flex items-center gap-1"
+                        >
+                          {cert.name}
+                          <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                          </svg>
+                        </a>
+                      ) : (
+                        <p className="text-xs font-medium text-gray-800">{cert.name}</p>
+                      )}
                       <p className="text-xs text-gray-400">{cert.issuer} · {cert.year}</p>
                     </div>
                   </div>
